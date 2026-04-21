@@ -39,9 +39,14 @@ const onAsync = (socket, handler) => async (payload = {}) => {
 };
 
 export const configureTaxiSocketServer = (httpServer) => {
+  const corsOrigin =
+    env.corsOrigins.length === 1 && env.corsOrigins[0] === "*"
+      ? true
+      : env.corsOrigins;
+
   const io = new Server(httpServer, {
     cors: {
-      origin: env.corsOrigin === '*' ? true : env.corsOrigin.split(','),
+      origin: corsOrigin,
       credentials: true,
     },
   });
