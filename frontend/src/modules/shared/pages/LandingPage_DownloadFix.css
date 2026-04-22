@@ -1,0 +1,72 @@
+/* Download Pro Refinement */
+.download-pro { padding: 100px 0; }
+.download-inner { 
+  background: var(--dark); 
+  border-radius: 60px; 
+  display: grid; 
+  grid-template-columns: 1.1fr 0.9fr; 
+  gap: 4rem; 
+  align-items: center; 
+  padding: 5rem 6rem; 
+  overflow: hidden; 
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.download-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.download-text .section-title {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.store-buttons { 
+  display: flex; 
+  gap: 1.5rem; 
+  margin-top: 1rem;
+}
+
+.store-btn { 
+  display: flex; 
+  align-items: center; 
+  gap: 1rem; 
+  background: #fff; 
+  color: var(--dark); 
+  padding: 0.8rem 1.8rem; 
+  border-radius: 18px; 
+  text-decoration: none; 
+  transition: var(--transition); 
+  min-width: 200px;
+}
+
+.mockup-container { 
+  perspective: 1500px; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+.mockup-screen {
+  width: 280px;
+  height: 520px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 45px;
+  border: 10px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.5);
+}
